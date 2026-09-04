@@ -1,19 +1,19 @@
 {
-  "name": "jsaqa_3_3",
+  "name": "jsaqa-hw7-5",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Домашнее задание 7.5. Puppeteer 2 — бронирование билетов",
   "scripts": {
-    "test": "jest",
-    "cucumber": "cucumber-js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "jest": "^27.3.1",
-    "jest-puppeteer": "^6.0.0",
-    "puppeteer": "^13.3.2",
-    "chai": "^4.3.4",
-    "cucumber": "^7.0.0-rc.0"
+  "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+  "test:puppeteer": "node --experimental-vm-modules node_modules/jest/bin/jest.js --config jest.config.js",
+  "test:cucumber": "cucumber-js"
+},
+
+
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "chai": "^4.4.0",
+    "jest": "^29.7.0",
+    "jest-puppeteer": "^9.0.2",
+    "puppeteer": "^21.11.0"
   }
 }
